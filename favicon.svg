@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.078" y1="-0.063" x2="1.078" y2="1.077" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffe259"/>
+      <stop offset="0.512" stop-color="#ffa751"/>
+      <stop offset="1" stop-color="#ff4e41"/>
+    </linearGradient>
+    <clipPath id="clip-파비콘">
+      <rect width="16" height="16"/>
+    </clipPath>
+  </defs>
+  <g id="파비콘" clip-path="url(#clip-파비콘)">
+    <circle id="타원_982" data-name="타원 982" cx="7" cy="7" r="7" transform="translate(1 1)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
