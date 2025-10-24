@@ -1,4 +1,4 @@
-var ag = setInterval("autoGallery()",3000); 
+// var ag = setInterval("autoGallery()",3000); 
 //시간 간격(3000 = 초, 1000밀리초는 1초)을 설정
 //3초 간격으로 명령어 보관함( autoGallery() ) 내에 수행할 명령어를 처리
 
