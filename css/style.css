@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap");
 @charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css"); /* regular-400, medium-500, semibold-600, bold-700 */
 
 @font-face {
   font-family: "Pretendard-Regular";
@@ -146,8 +147,6 @@ html {
 
 /*비주얼영역 텍스트 타이핑*/
 
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css"); /* regular-400, medium-500, semibold-600, bold-700 */
-
 *,
 :after,
 :before {
@@ -158,10 +157,6 @@ html {
 
 .typing-container {
   text-align: center;
-}
-
-.typing-container span {
-  /* white-space: nowrap; */
 }
 
 .typing-container span:first-child {
@@ -211,6 +206,7 @@ html {
   --c-color: #fff;
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: none;
+  appearance: none;
   outline: none;
   position: relative;
   cursor: pointer;
@@ -249,6 +245,7 @@ html {
 
 .uiverse .wrapper {
   -webkit-mask-image: -webkit-radial-gradient(white, black);
+  mask-image: -webkit-radial-gradient(white, black);
   overflow: hidden;
   border-radius: 24px;
   min-width: 132px;
@@ -894,10 +891,6 @@ html {
   flex: 1;
 }
 
-.wrap4_img {
-  /* width: 500px; */
-}
-
 .wrap4_img img {
   border-radius: 15px;
   flex-direction: row-reverse;
@@ -1078,15 +1071,6 @@ html {
     pointer-events: auto !important;
   }
 
-  .card {
-    /* width: 280px; */
-    /* height: 310px; */
-  }
-
-  .card_box img {
-    /* width: 240px; */
-  }
-
   .front_text {
     /* margin-left: 50px; */
     padding-left: 0;
@@ -1121,9 +1105,6 @@ html {
     display: none;
   }
 
-  .wrap4_img img {
-    /* width: 450px; */
-  }
   .scroll_wrap {
     flex-direction: column;
   }
@@ -1167,9 +1148,7 @@ html {
     padding: 0 24px;
     margin-top: 100px;
   }
-  .portfolio {
-    /* margin-top: 500px; */
-  }
+
   .card:hover .overlay {
     opacity: 0 !important;
     pointer-events: none !important;
@@ -1177,19 +1156,6 @@ html {
   .card.active .overlay {
     opacity: 1 !important;
     pointer-events: auto !important;
-  }
-
-  .card {
-    /* width: 610px; */
-    /* height: 310px; */
-  }
-  .front {
-    /* flex-direction: row;
-    gap: 24px; */
-  }
-  .front {
-    /* margin-top: 55px; */
-    /* padding-left: 20px; */
   }
 
   #wrap {
@@ -1207,15 +1173,6 @@ html {
 
   .card_box img {
     width: 240px;
-  }
-
-  .front_text {
-    /* margin-left: 20px; */
-  }
-  .overlay button,
-  .overlay a {
-    /* width: 450px;
-    height: 70px; */
   }
 
   .portfolio_box3 .main {
@@ -1252,9 +1209,7 @@ html {
     flex-direction: row;
     margin: 0 auto;
   }
-  .wrap4_img img {
-    /* width: 90vw; */
-  }
+
   .portfolio_box4 {
     flex-direction: column;
   }
@@ -1270,10 +1225,6 @@ html {
   .text-box {
     order: 1;
     padding: 24px;
-  }
-  .text-box-wrap {
-    /* height: 10px;
-    margin-bottom: 50px; */
   }
   .btns {
     flex-direction: row;
