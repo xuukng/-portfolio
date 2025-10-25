@@ -37,6 +37,7 @@ button{border: 0; background: none; cursor: pointer;}
 .header_inner{ display: flex; justify-content: space-between; width: 1100px;  margin: 0 auto;}
 
 h1{ margin: 30px 0px; }
+h1 a{ display:block; padding:10px }
 
 .gnb{ display: flex; justify-content: space-between; margin-top: 20px;  }
 
