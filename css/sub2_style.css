@@ -33,15 +33,14 @@ button{border: 0; background: none; cursor: pointer;}
 
 
 /*1. #header*/
-#header{ height: 100px; width: 100%; position: fixed; left: 0; z-index: 100;   z-index: 1001;}
-.header_inner{ display: flex; justify-content: space-between; width: 1100px;  margin: 0 auto;}
+#header{ height: 100px; width: 100%; position: fixed; left: 0; z-index: 100;   z-index: 1001; align-items: center;}
+.header_inner{ display: flex; justify-content: space-between; width: 1100px;  margin: 0 auto; align-items: center;}
 
-h1{ margin: 30px 0px; }
+h1{ margin: 20px 0px;}
 h1 a{ display:block; padding:10px; }
 
-.gnb{ display: flex; justify-content: space-between; margin-top: 20px;  }
+.gnb{ display: flex; justify-content: space-between; }
 
-.gnb h2{ line-height: 45px; }
 .gnb li a{ color: #181818; white-space: nowrap;}
 .gnb li a:hover{ color: #EAFF5F; border-bottom: 1px solid #EAFF5F; padding-bottom: 1px;}
 
@@ -358,6 +357,7 @@ h1 a{ display:block; padding:10px; }
   text-align: center;
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
 }
 
 .search_store h3 {
@@ -405,7 +405,7 @@ h1 a{ display:block; padding:10px; }
 /*이벤트*/
 .event{
   margin: 0 auto;
-  width: 100vw;
+  width: 100%;
   position: relative;
 }
 
@@ -423,11 +423,10 @@ h1 a{ display:block; padding:10px; }
 .event_box{
   display: flex;
   justify-content: center;
-  width: 100%;
   margin: 0 auto;
   margin-top: 60px;
-  
 }
+
 
 .event span{
   text-align: center;
@@ -440,11 +439,13 @@ h1 a{ display:block; padding:10px; }
   height: 355px;
   border-radius: 15px;
   margin-bottom: 25px;
+  gap: 20px;
 }
 
-.event_box li:not(:last-of-type) img{
+.event_box li:not(:last-child) { 
   margin-right: 20px;
 }
+
 
 .event_box span a{
   margin-bottom: 120px;
@@ -546,7 +547,7 @@ hr{height: 1px; background-color: #ffffff; opacity: 0.2; margin-top: 30px;}
 .copy{ color: #ffffff; text-align: center; margin-top: 30px; font-size: 14px; padding-bottom: 40px; }
 
 /* ------------------------------- */
-/* ✅ 반응형 및 헤더 개선 영역 시작 */
+/* 반응형 및 헤더 개선 영역 시작 */
 /* ------------------------------- */
 
 /* 헤더 고정 + 반투명 배경 (PC용) */
@@ -560,6 +561,7 @@ hr{height: 1px; background-color: #ffffff; opacity: 0.2; margin-top: 30px;}
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   backdrop-filter: blur(8px);
 }
+
 
 #header .header_wrap {
   display: flex;
@@ -624,7 +626,7 @@ nav .gnb li a {
   font-weight: 600;
 }
 
-/* 🟢 반응형 구간 시작 */
+/* 반응형 구간 시작 */
 
 /* ----------- 태블릿 이하 (max-width:1100px) ----------- */
 @media (max-width:1100px) {
@@ -653,11 +655,14 @@ nav .gnb li a {
     background-color: #fff;
   }
   
+  
 
   nav .gnb li a {
     font-size: 22px;
     font-weight: 600;
     color: #222;
+    width: 100%;
+    display: block;
   }
 
 
@@ -771,6 +776,7 @@ nav .gnb li a {
   
 /*이벤트*/
 .event_box{ flex-direction: column; align-items: center; }
+.event_box li{ margin-right: 0 !important; }
 .container_slide_btn2{ display: none; }
 
 
@@ -928,16 +934,7 @@ nav .gnb li a {
   
 /*이벤트*/
 .event_box{ flex-direction: column; align-items: center; }
-
 }
 
 
 
-
-
-
-
-
-/* ------------------------------- */
-/* ✅ 반응형 및 헤더 개선 영역 끝 */
-/* ------------------------------- */
